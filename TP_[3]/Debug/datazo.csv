@@ -1,0 +1,4 @@
+ID,NOMBRE,APELLIDO,PRECIO,CODIGO,ESTADO DE VUELO,TIPO DE PASAJERO
+245, Sofia, Arlina, 85000.000000, FR5678G, Demorado, Primera clase
+3, Arlina, Gutierre, 45000.000000, MM0987B, En Horario, Clase ejecutiva
+246, Carlo, Menez, 150.000000, 2988, 2, Economica
