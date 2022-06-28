@@ -149,13 +149,13 @@ int test_addNode(LinkedList* this, int nodeIndex,void* pElement)
  */
 int ll_add(LinkedList* this, void* pElement)
 {
-	 return addNode(this, ll_len(this), pElement);
+	return addNode(this, ll_len(this), pElement);
 }
 
 /** \brief Retorna un puntero al elemento que se encuentra en el índice especificado
  *
  * \param this LinkedList* Puntero a la lista
- * \param index int puntero
+ * \param nodeIndex int indice especificado
  * \return void* Retorna    (NULL) Error: si el puntero a la lista es NULL o (si el indice es menor a 0 o mayor al len de la lista)
                             (pElement) Si funciono correctamente
  *
@@ -178,11 +178,10 @@ void* ll_get(LinkedList* this, int index)
     return returnAux;
 }
 
-
-/** \brief Inserta un elemento en el linkedlist en el indice especificado
+/** \brief Inserta un elemento en el LinkedList, en el índice especificado
  *
  * \param this LinkedList* Puntero a la lista
- * \param nodeIndex int Ubicacion del indice en donde se va a insertar el elemento
+ * \param nodeIndex int indice especificado
  * \param pElement void* Puntero al nuevo elemento
  * \return int Retorna  (-1) Error: si el puntero a la lista es NULL o (si el indice es menor a 0 o mayor al len de la lista)
                         ( 0) Si funciono correctamente
@@ -487,7 +486,6 @@ LinkedList* ll_clone(LinkedList* this)
 
     return cloneArray;
 }
-
 
 /** \brief Ordena los elementos de la lista utilizando la funcion criterio recibida como parametro
  * \param pList LinkedList* Puntero a la lista
