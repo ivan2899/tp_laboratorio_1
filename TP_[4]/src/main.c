@@ -50,7 +50,7 @@ int main(void)
     printf("Dentro de la lista1 estan los elementos de la lista 2?\n Devuelve %d\n",ll_containsAll(lista, lista2));
 
 
-    //clono la lista 1
+    //clono la lista 1 con el ll clone
     lista3 = ll_clone(lista);
 
     printf("Dentro de la lista1 estan los elementos de la lista 2?\nDevuelve %d\n",ll_containsAll(lista, lista2));
